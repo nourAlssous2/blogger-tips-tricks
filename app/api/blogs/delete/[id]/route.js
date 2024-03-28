@@ -1,4 +1,4 @@
-import isAuth from "@/lib/middlewares/isAuth";
+import isAuth from "@/lib/funcs/isAuth";
 import { redirect } from "next/navigation";
 import { cookies } from "next/headers";
 
