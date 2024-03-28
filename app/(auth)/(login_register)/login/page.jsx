@@ -2,11 +2,6 @@ import LoginForm from "@/components/LoginForm/LoginForm"
 import { translate } from "@/lib/funcs/translate";
 import { cookies } from "next/headers";
 
-export const metadata = {
-    title: 'Login To Your Account',
-    description: 'Login to your created account to access your profile',
-}
-
 export function generateMetadata() {
     const language = cookies().get('lang')?.value === '1' ? 'ar' : 'en';
     const translates = translate(language)
