@@ -1,6 +1,6 @@
 import BlogSkeleton from "@/components/Skeletons/Blog/BlogSkeleton";
 import UserBlogs from "@/components/UserBlogs/UserBlogs";
-import { ConvertToLocalDate } from "@/lib/funcs/date";
+import ConvertToLocalDate from "@/lib/funcs/date";
 import isAuth from "@/lib/funcs/isAuth";
 import { translate } from "@/lib/funcs/translate";
 import { cookies } from "next/headers";
