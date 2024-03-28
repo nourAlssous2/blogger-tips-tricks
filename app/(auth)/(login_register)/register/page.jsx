@@ -1,4 +1,4 @@
-import RegisterForm from '@/components/RegisterForm/RegisterForm';
+// import RegisterForm from '@/components/RegisterForm/RegisterForm';
 import { translate } from '@/lib/funcs/translate';
 import { cookies } from 'next/headers';
 
@@ -20,7 +20,7 @@ export default async function page() {
     return (
         <div className="container">
             <h1 className="text-center my-2 text-3xl font-bold">{translates.createAccount}</h1>
-            <RegisterForm lang={language} />
+            {/* <RegisterForm lang={language} /> */}
         </div>
     )
 }

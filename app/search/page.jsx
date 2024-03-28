@@ -2,6 +2,8 @@ import Blog from "@/components/Blog/Blog";
 import { translate } from "@/lib/funcs/translate";
 import { cookies } from "next/headers";
 
+export const dynamic = 'force-dynamic';
+
 export function generateMetadata({ searchParams }) {
     const { q } = searchParams;
     const language = cookies().get('lang')?.value === '1' ? 'ar' : 'en';

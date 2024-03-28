@@ -5,6 +5,7 @@ import Blog from "./Blog/Blog";
 
 export default function Recursuive({ url }) {
     const [blogs, setBlogs] = useState();
+    const [isPending, startTransition] = useTransition();
     useEffect(() => {
         startTransition(async () => {
             await fetch(url || `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/blogs?page=${1}`).then(res => res.json()).then(res => {
@@ -37,10 +38,3 @@ export default function Recursuive({ url }) {
         </>
     )
 }
-
-
-/*
-
-1 -> start rendering -> fetch -> output -> nextUrl ? reRender
-
-*/
