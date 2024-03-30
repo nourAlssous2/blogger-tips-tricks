@@ -7,7 +7,7 @@ import isAuth from '@/lib/funcs/isAuth'
 import { cookies } from 'next/headers'
 import dynamic from 'next/dynamic'
 
-export const maxDuration = 60;
+export const maxDuration = 10;
 
 export const cairo = localFont({
     src: [
